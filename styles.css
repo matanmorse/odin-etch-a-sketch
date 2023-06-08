@@ -1,0 +1,53 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: content-box;
+    background-color: seashell;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.main-content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div.grid {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 15px;
+    height: 1000px;
+    width: 1000px;
+    border: 1px solid black;
+}
+
+input.cell-count {
+    margin: 1rem;
+}
+
+button {
+    margin: 1rem;
+}
+
+h1.title {
+    color: crimson;
+}
+
+.row {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+div.box {
+    border: 1px solid black;
+}
