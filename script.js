@@ -10,6 +10,7 @@ document.body.onmouseup = () => (mouseDown = false)
 
 const container = document.querySelector('div.grid')
 const cellField = document.querySelector('input.cell-count');
+const cellCountDisplay = document.querySelector('p.cell-count-display');
 
 function changeColor(event) {
     // check if mouse is down
@@ -34,12 +35,18 @@ function updateGrid() {
 
     // generate new grid
     generateGrid();
+
+    // change counter
+    cellCountDisplay.innerHTML = `${numberOfCells}x${numberOfCells}`
+
 }
 
 // generate a grid of squares based on number of squares wanted
 function generateGrid() {
     const cellSize = gridSize / numberOfCells;
     const rowCount = Math.floor(1000 / cellSize);
+    // set counter
+    cellCountDisplay.innerHTML = `${numberOfCells}x${numberOfCells}`
 
     for (let i = 0; i < numberOfCells; i++) {
 
