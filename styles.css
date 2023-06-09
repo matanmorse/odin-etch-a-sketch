@@ -43,11 +43,48 @@ div.settings {
     justify-content: center;
     align-items: center;
     font-size: 24pt;
-    margin-top: 80%;
+    margin-top: 10%;
 }
 
 div.size-display {
     display: flex;
+    align-items: center;
+}
+
+div.brush-options {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+div.box {
+    display: flex;
+    flex-direction: row;
+}
+
+div.brush-option {
+    transition: 0.1s all;
+    border: 2px solid slategray;    
+    height: 125px;
+    width: 125px;
+    background-color: #ededed;
+    margin: 1rem;
+}
+
+div.brush-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.color-picker {
+    transition: 0.1s all;
+}
+
+img.icon {
+    height: 110px;
+    width: 110px;
 }
 
 div.grid {
@@ -66,6 +103,11 @@ button {
     margin: 1rem;
 }
 
+div.checked {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 15px;
+    border: 6px solid slategray;
+}
+
 h1.title {
     color: black;
 }
@@ -81,6 +123,29 @@ h1.title {
     box-sizing: border-box;
 }
 
-div.box {
-    border: 1px solid black;
+input[type='range'] {
+    width: 100%;
+    -webkit-appearence: none;
+    appearance: none;
+    height: 25px;
+    background-color: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    transition: .2s all;
+    border-radius: 25%;
 }
+
+input[type='range']:hover {
+    opacity: 1;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+input[type='range'] ::slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  

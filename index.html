@@ -14,10 +14,28 @@
         <div class="sidebar">
             <h1 class="title">Etch-A-Sketch</h1>
             <div class="settings">
-                <label class="button-label">How many squares?</label>
+                <h3>How many squares?</h3>
                 <div class="size-display">
                     <input class="cell-count" min="1" max="100" type="range" value="16">        
                     <p class="cell-count-display">16x16</p>
+                </div>
+                <div class="brush-options">
+                    <h3 class="brush-title">Brush Options</h3>
+                    <div class="box">
+                        <div class="brush-box">
+                            <div class="brush-option brush checked" value="brush">
+                                <img class="icon" src="static/brush.png" alt="brush">
+                            </div>
+                            <input class="color-picker" type="color" value="#000000">    
+                        </div>
+                        <div class="brush-option rainbow" value="rainbow">
+                            <img class="icon" src="static/rainbow.png" alt="rainbow brush">
+
+                        </div>
+                        <div class="brush-option eraser" value="eraser">
+                            <img class="icon" src="static/eraser.png"  alt="eraser">
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
